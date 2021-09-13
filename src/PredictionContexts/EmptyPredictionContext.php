@@ -26,7 +26,7 @@ final class EmptyPredictionContext extends SingletonPredictionContext
         return null;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         return $other instanceof self;
     }

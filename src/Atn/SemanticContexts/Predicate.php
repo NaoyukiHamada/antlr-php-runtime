@@ -38,7 +38,7 @@ final class Predicate extends SemanticContext
         return Hasher::hash($this->ruleIndex, $this->predIndex, $this->isCtxDependent);
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

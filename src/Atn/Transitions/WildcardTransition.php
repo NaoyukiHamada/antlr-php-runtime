@@ -16,7 +16,7 @@ final class WildcardTransition extends Transition
         return self::WILDCARD;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

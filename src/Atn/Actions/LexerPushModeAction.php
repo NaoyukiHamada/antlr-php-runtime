@@ -69,7 +69,7 @@ final class LexerPushModeAction implements LexerAction
         return Hasher::hash($this->getActionType(), $this->mode);
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

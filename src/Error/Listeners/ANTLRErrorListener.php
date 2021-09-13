@@ -20,7 +20,7 @@ interface ANTLRErrorListener
 {
     public function syntaxError(
         Recognizer $recognizer,
-        ?object $offendingSymbol,
+        $offendingSymbol,
         int $line,
         int $charPositionInLine,
         string $msg,

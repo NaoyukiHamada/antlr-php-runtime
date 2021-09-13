@@ -43,7 +43,7 @@ class SetTransition extends Transition
         return self::SET;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

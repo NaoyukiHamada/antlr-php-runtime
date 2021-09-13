@@ -109,7 +109,7 @@ final class LexerIndexedCustomAction implements LexerAction
         return Hasher::hash($this->getActionType(), $this->offset, $this->action);
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

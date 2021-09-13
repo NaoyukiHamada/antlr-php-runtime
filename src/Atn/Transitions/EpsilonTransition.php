@@ -49,7 +49,7 @@ final class EpsilonTransition extends Transition
         return self::EPSILON;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

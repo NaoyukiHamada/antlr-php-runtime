@@ -116,7 +116,7 @@ final class Map implements Equatable, \Countable, \IteratorAggregate
         }
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

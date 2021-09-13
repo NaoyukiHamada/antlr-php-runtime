@@ -48,7 +48,7 @@ final class ActionTransition extends Transition
         return self::ACTION;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

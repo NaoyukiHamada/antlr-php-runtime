@@ -16,7 +16,7 @@ final class DefaultEquivalence implements Equivalence
         return $value->hashCode();
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         return $other instanceof self;
     }

@@ -17,7 +17,7 @@ final class NotSetTransition extends SetTransition
         return self::NOT_SET;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

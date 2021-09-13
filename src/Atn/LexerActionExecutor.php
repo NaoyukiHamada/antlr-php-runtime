@@ -196,7 +196,7 @@ final class LexerActionExecutor implements Equatable
         return $this->cachedHashCode;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

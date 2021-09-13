@@ -130,7 +130,7 @@ class ATNConfig implements Hashable
      * An ATN configuration is equal to another if both have the same state, they
      * predict the same alternative, and syntactic/semantic contexts are the same.
      */
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

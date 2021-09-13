@@ -74,7 +74,7 @@ final class LexerChannelAction implements LexerAction
         return Hasher::hash($this->getActionType(), $this->channel);
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

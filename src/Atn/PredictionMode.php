@@ -494,7 +494,7 @@ final class PredictionMode
     public static function getConflictingAltSubsets(ATNConfigSet $configs) : array
     {
         $configToAlts = new Map(new class implements Equivalence {
-            public function equals(object $other) : bool
+            public function equals($other) : bool
             {
                 return $this instanceof self;
             }

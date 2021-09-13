@@ -54,7 +54,7 @@ final class RuleTransition extends Transition
         return self::RULE;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

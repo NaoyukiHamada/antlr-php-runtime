@@ -40,7 +40,7 @@ final class Interval implements Equatable
         return $this->stop - $this->start + 1;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

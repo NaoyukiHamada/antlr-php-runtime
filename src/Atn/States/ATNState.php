@@ -77,7 +77,7 @@ abstract class ATNState implements Hashable
      */
     public $nextTokenWithinRule;
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

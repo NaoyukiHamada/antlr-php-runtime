@@ -74,7 +74,7 @@ final class LexerTypeAction implements LexerAction
         return Hasher::hash($this->getActionType(), $this->type);
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

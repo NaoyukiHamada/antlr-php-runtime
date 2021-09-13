@@ -16,13 +16,13 @@ final class Pair implements Equatable
     /** @var object|null */
     public $b;
 
-    public function __construct(?object $a, ?object $b)
+    public function __construct($a, $b)
     {
         $this->a = $a;
         $this->b = $b;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($other === $this) {
             return true;

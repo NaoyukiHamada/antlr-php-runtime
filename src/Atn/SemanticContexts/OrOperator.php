@@ -115,7 +115,7 @@ final class OrOperator extends Operator
         return $result;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

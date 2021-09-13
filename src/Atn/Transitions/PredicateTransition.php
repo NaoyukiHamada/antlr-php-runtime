@@ -54,7 +54,7 @@ class PredicateTransition extends AbstractPredicateTransition
         return self::PREDICATE;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

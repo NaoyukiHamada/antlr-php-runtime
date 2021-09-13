@@ -116,7 +116,7 @@ class ATNConfigSet implements Hashable
                 return $value->hashCode();
             }
 
-            public function equals(object $other) : bool
+            public function equals($other) : bool
             {
                 return $other instanceof self;
             }
@@ -279,7 +279,7 @@ class ATNConfigSet implements Hashable
         }
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;
@@ -320,7 +320,7 @@ class ATNConfigSet implements Hashable
         return $this->getLength() === 0;
     }
 
-    public function contains(object $item) : bool
+    public function contains($item) : bool
     {
         if ($this->configLookup === null) {
             throw new \InvalidArgumentException('This method is not implemented for readonly sets.');

@@ -113,7 +113,7 @@ final class AndOperator extends Operator
         return $result;
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;
@@ -144,7 +144,7 @@ final class AndOperator extends Operator
     /**
      * @param array<PrecedencePredicate> $predicates
      */
-    private static function minPredicate(array $predicates) : object
+    private static function minPredicate(array $predicates)
     {
         $iterator = new \ArrayIterator($predicates);
 

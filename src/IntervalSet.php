@@ -489,7 +489,7 @@ final class IntervalSet implements Equatable
         return $vocabulary->getDisplayName($a);
     }
 
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;

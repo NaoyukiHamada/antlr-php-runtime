@@ -112,7 +112,7 @@ final class DFAState implements Hashable
      * exists that has this exact set of ATN configurations. The
      * {@see DFAState::$stateNumber} is irrelevant.
      */
-    public function equals(object $other) : bool
+    public function equals($other) : bool
     {
         if ($this === $other) {
             return true;
